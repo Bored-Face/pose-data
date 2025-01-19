@@ -1,0 +1,15 @@
+{
+	"function": "minecraft:set_written_book_pages",
+	"mode": "append",
+	"pages": [
+		{
+			"text": "",
+			"extra": [
+				{
+					"translate": "gui.paint-ink.pose.smartphone.create.title"
+				},
+				{ "text": "\n" }
+			]
+		}
+	]
+}

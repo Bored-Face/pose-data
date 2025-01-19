@@ -1,0 +1,35 @@
+{
+	"function": "minecraft:sequence",
+	"functions": [
+		{
+			"function": "minecraft:set_components",
+			"components": {
+				"minecraft:written_book_content": {
+					"title": "POSE Smartphone",
+					"author": "PAINT-Ink",
+					"generation": 0
+				},
+				"minecraft:rarity": "epic",
+				"minecraft:enchantment_glint_override": false
+			}
+		},
+		{
+			"function": "minecraft:reference",
+			"name": "paint-ink.pose:smartphone_page_create"
+		},
+		{
+			"function": "minecraft:reference",
+			"name": "paint-ink.pose:smartphone_page_skin"
+		},
+		{
+			"function": "minecraft:reference",
+			"name": "paint-ink.pose:smartphone_page_cape"
+		},
+		{
+			"function": "minecraft:set_custom_data",
+			"tag": {
+				"paint-ink.pose": { "smartphone": {} }
+			}
+		}
+	]
+}
