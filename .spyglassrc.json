@@ -1,0 +1,16 @@
+{
+	"env": {
+		"gameVersion": "1.21.4"
+	},
+	"lint": {
+		"idOmitDefaultNamespace": false,
+		"nameOfObjective": [
+			"error",
+			"^paint-ink\\.pose\\..*$"
+		],
+		"nameOfTag": [
+			"error",
+			"^paint-ink\\.pose\\..*$"
+		]
+	}
+}
