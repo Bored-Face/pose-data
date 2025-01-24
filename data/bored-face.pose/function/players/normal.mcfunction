@@ -3,7 +3,7 @@ summon minecraft:item_display ~ ~1.124 ~ { \
 		id: "minecraft:barrier", \
 		count: 1, \
 		components: { \
-			"minecraft:item_model": "paint-ink.pose:players/default_wide", \
+			"minecraft:item_model": "bored-face.pose:players/default_wide", \
 			"minecraft:custom_model_data": {strings: ["body"]}, \
 			"minecraft:custom_data": {players: {}}, \
 		}, \
@@ -15,7 +15,7 @@ summon minecraft:item_display ~ ~1.124 ~ { \
 				id: "minecraft:barrier", \
 				count: 1, \
 				components: { \
-					"minecraft:item_model": "paint-ink.pose:players/default_wide", \
+					"minecraft:item_model": "bored-face.pose:players/default_wide", \
 					"minecraft:custom_model_data": {strings: ["rightarm"]}, \
 					"minecraft:custom_data": {players: {}}, \
 				}, \
@@ -33,7 +33,7 @@ summon minecraft:item_display ~ ~1.124 ~ { \
 				id: "minecraft:barrier", \
 				count: 1, \
 				components: { \
-					"minecraft:item_model": "paint-ink.pose:cape", \
+					"minecraft:item_model": "bored-face.pose:cape", \
 					"minecraft:custom_model_data": {strings: ["vanilla"]}, \
 				}, \
 			}, \
@@ -50,7 +50,7 @@ summon minecraft:item_display ~ ~1.124 ~ { \
 				id: "minecraft:barrier", \
 				count: 64, \
 				components: { \
-					"minecraft:item_model": "paint-ink.pose:players/default_wide", \
+					"minecraft:item_model": "bored-face.pose:players/default_wide", \
 					"minecraft:custom_model_data": {strings: ["leftarm"]}, \
 					"minecraft:custom_data": {players: {}}, \
 				}, \
@@ -68,7 +68,7 @@ summon minecraft:item_display ~ ~1.124 ~ { \
 				id: "minecraft:barrier", \
 				count: 1, \
 				components: { \
-					"minecraft:item_model": "paint-ink.pose:players/default_wide", \
+					"minecraft:item_model": "bored-face.pose:players/default_wide", \
 					"minecraft:custom_model_data": {strings: ["leftleg"]}, \
 					"minecraft:custom_data": {players: {}}, \
 				}, \
@@ -86,7 +86,7 @@ summon minecraft:item_display ~ ~1.124 ~ { \
 				id: "minecraft:barrier", \
 				count: 1, \
 				components: { \
-					"minecraft:item_model": "paint-ink.pose:players/default_wide", \
+					"minecraft:item_model": "bored-face.pose:players/default_wide", \
 					"minecraft:custom_model_data": {strings: ["head"]}, \
 					"minecraft:custom_data": {players: {}}, \
 				}, \
@@ -104,7 +104,7 @@ summon minecraft:item_display ~ ~1.124 ~ { \
 				id: "minecraft:barrier", \
 				count: 1, \
 				components: { \
-					"minecraft:item_model": "paint-ink.pose:players/default_wide", \
+					"minecraft:item_model": "bored-face.pose:players/default_wide", \
 					"minecraft:custom_model_data": {strings: ["rightleg"]}, \
 					"minecraft:custom_data": {players: {}}, \
 				}, \

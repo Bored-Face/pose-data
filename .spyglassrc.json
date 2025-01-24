@@ -6,11 +6,11 @@
 		"idOmitDefaultNamespace": false,
 		"nameOfObjective": [
 			"error",
-			"^paint-ink\\.pose\\..*$"
+			"^bored-face\\.pose\\..*$"
 		],
 		"nameOfTag": [
 			"error",
-			"^paint-ink\\.pose\\..*$"
+			"^bored-face\\.pose\\..*$"
 		]
 	}
 }
