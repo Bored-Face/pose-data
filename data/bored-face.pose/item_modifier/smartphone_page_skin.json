@@ -19,7 +19,13 @@
 				{
 					"translate": "gui.bored-face.pose.smartphone.skin.title"
 				},
-				{ "text": "\n" }
+				{ "text": "\n" },
+				{
+					"storage": "bored-face.pose:smartphone",
+					"nbt": "skins[]",
+					"interpret": true,
+					"separator": "\n"
+				}
 			]
 		}
 	]

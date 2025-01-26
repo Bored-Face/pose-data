@@ -1,0 +1,18 @@
+dispatch minecraft:storage[bored-face.pose:data] to struct {
+	/// List of available players poses
+	players: [Data],
+	/// List of available capes
+	capes_1: [Data],
+	capes_2: [Data],
+	capes_3: [Data],
+	/// List of available skins
+	skins: [Data],
+}
+
+struct Data {
+	/// The display name
+	name: #[text_component] string,
+	/// The identifier.
+	/// Used for the resource location of the item definition and to the call the the function.
+	id: string
+}

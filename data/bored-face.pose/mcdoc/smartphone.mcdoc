@@ -1,0 +1,47 @@
+dispatch minecraft:storage[bored-face.pose:smartphone] to struct {
+	/// List of available players poses
+	players: [#[text_component] string],
+	/// List of available capes
+	capes_1: [#[text_component] string],
+	capes_2: [#[text_component] string],
+	capes_3: [#[text_component] string],
+	/// List of available skins
+	skins: [#[text_component] string],
+
+	/// Temporary data
+	tmp: Tmp,
+}
+
+/// Temporary data
+struct Tmp {
+	/// The function location
+	function?: Function,
+	/// The storage path
+	storage?: Storage,
+	/// The current index
+	i?: int,
+	/// The current id
+	id?: string,
+}
+
+/// Available functions
+enum(string) Function {
+	/// The player poses
+	Player = "player",
+	/// The capes
+	Cape = "cape",
+	/// The skins
+	Skin = "skin",
+}
+
+/// Available storages
+enum(string) Storage {
+	/// The player poses
+	Player = "players",
+	/// The capes
+	Cape1 = "capes_1",
+	Cape2 = "capes_2",
+	Cape3 = "capes_3",
+	/// The skins
+	Skin = "skins",
+}

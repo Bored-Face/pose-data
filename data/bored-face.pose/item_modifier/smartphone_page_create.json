@@ -19,7 +19,13 @@
 				{
 					"translate": "gui.bored-face.pose.smartphone.create.title"
 				},
-				{ "text": "\n" }
+				{ "text": "\n" },
+				{
+					"storage": "bored-face.pose:smartphone",
+					"nbt": "players[]",
+					"interpret": true,
+					"separator": "\n"
+				}
 			]
 		}
 	]
