@@ -1,12 +1,10 @@
 dispatch minecraft:storage[bored-face.pose:smartphone] to struct {
 	/// List of available players poses
-	players: [#[text_component] string],
+	players: [[#[text_component] string]],
 	/// List of available capes
-	capes_1: [#[text_component] string],
-	capes_2: [#[text_component] string],
-	capes_3: [#[text_component] string],
+	capes: [[#[text_component] string]],
 	/// List of available skins
-	skins: [#[text_component] string],
+	skins: [[#[text_component] string]],
 
 	/// Temporary data
 	tmp: Tmp,
@@ -20,6 +18,8 @@ struct Tmp {
 	storage?: Storage,
 	/// The current index
 	i?: int,
+	/// The current inner index
+	j?: int,
 	/// The current id
 	id?: string,
 }
@@ -39,9 +39,7 @@ enum(string) Storage {
 	/// The player poses
 	Player = "players",
 	/// The capes
-	Cape1 = "capes_1",
-	Cape2 = "capes_2",
-	Cape3 = "capes_3",
+	Cape = "capes",
 	/// The skins
 	Skin = "skins",
 }

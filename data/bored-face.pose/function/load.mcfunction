@@ -5,7 +5,7 @@ execute unless data storage bored-face.pose:data players run data modify storage
 	{name: "{\"text\": \"Normal\"}", id: "normal"}, \
 ]
 
-execute unless data storage bored-face.pose:data capes_1 run data modify storage bored-face.pose:data capes_1 set value [ \
+execute unless data storage bored-face.pose:data capes run data modify storage bored-face.pose:data capes set value [ \
 	{name: "{\"text\": \"15th Anniversary\"}", id: "15th_anniversary"}, \
 	{name: "{\"text\": \"Birthday\"}", id: "birthday"}, \
 	{name: "{\"text\": \"Cherry Blossom\"}", id: "cherry_blossom"}, \
@@ -18,8 +18,6 @@ execute unless data storage bored-face.pose:data capes_1 run data modify storage
 	{name: "{\"text\": \"Minecon 2011\"}", id: "minecon_2011"}, \
 	{name: "{\"text\": \"Minecon 2012\"}", id: "minecon_2012"}, \
 	{name: "{\"text\": \"Minecon 2013\"}", id: "minecon_2013"}, \
-]
-execute unless data storage bored-face.pose:data capes_2 run data modify storage bored-face.pose:data capes_2 set value [ \
 	{name: "{\"text\": \"Minecon 2015\"}", id: "minecon_2015"}, \
 	{name: "{\"text\": \"Minecon 2016\"}", id: "minecon_2016"}, \
 	{name: "{\"text\": \"Minecraft Experience\"}", id: "minecraft_experience"}, \
@@ -32,8 +30,6 @@ execute unless data storage bored-face.pose:data capes_2 run data modify storage
 	{name: "{\"text\": \"Prismarine\"}", id: "prismarine"}, \
 	{name: "{\"text\": \"Purple Heart\"}", id: "purple_heart"}, \
 	{name: "{\"text\": \"Realms Mapmaker\"}", id: "realms_mapmaker"}, \
-]
-execute unless data storage bored-face.pose:data capes_3 run data modify storage bored-face.pose:data capes_3 set value [ \
 	{name: "{\"text\": \"Scrolls\"}", id: "scrolls"}, \
 	{name: "{\"text\": \"Snowman\"}", id: "snowman"}, \
 	{name: "{\"text\": \"Spade\"}", id: "spade"}, \

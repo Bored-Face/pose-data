@@ -22,59 +22,7 @@
 				{ "text": "\n" },
 				{
 					"storage": "bored-face.pose:smartphone",
-					"nbt": "capes_1[]",
-					"interpret": true,
-					"separator": "\n"
-				}
-			]
-		},
-		{
-			"text": "",
-			"extra": [
-				{
-					"text": "\u0002",
-					"font": "bored-face.pose:icon",
-					"shadow_color": 0,
-					"color": "white",
-					"extra": [
-						{ "text": "\u0064\u002a", "font": "bored-face.pose:space_neg" },
-						{ "text": "\u0001" },
-						{ "text": "\u0001", "font": "bored-face.pose:space_neg" }
-					]
-				},
-				{
-					"translate": "gui.bored-face.pose.smartphone.cape.title"
-				},
-				{ "text": "\n" },
-				{
-					"storage": "bored-face.pose:smartphone",
-					"nbt": "capes_2[]",
-					"interpret": true,
-					"separator": "\n"
-				}
-			]
-		},
-		{
-			"text": "",
-			"extra": [
-				{
-					"text": "\u0002",
-					"font": "bored-face.pose:icon",
-					"shadow_color": 0,
-					"color": "white",
-					"extra": [
-						{ "text": "\u0064\u002a", "font": "bored-face.pose:space_neg" },
-						{ "text": "\u0001" },
-						{ "text": "\u0001", "font": "bored-face.pose:space_neg" }
-					]
-				},
-				{
-					"translate": "gui.bored-face.pose.smartphone.cape.title"
-				},
-				{ "text": "\n" },
-				{
-					"storage": "bored-face.pose:smartphone",
-					"nbt": "capes_3[]",
+					"nbt": "capes[0][]",
 					"interpret": true,
 					"separator": "\n"
 				}

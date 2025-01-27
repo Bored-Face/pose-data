@@ -22,7 +22,7 @@
 				{ "text": "\n" },
 				{
 					"storage": "bored-face.pose:smartphone",
-					"nbt": "players[]",
+					"nbt": "players[0][]",
 					"interpret": true,
 					"separator": "\n"
 				}
