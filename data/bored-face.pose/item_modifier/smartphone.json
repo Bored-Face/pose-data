@@ -14,18 +14,6 @@
 			}
 		},
 		{
-			"function": "minecraft:reference",
-			"name": "bored-face.pose:smartphone_page_create"
-		},
-		{
-			"function": "minecraft:reference",
-			"name": "bored-face.pose:smartphone_page_skin"
-		},
-		{
-			"function": "minecraft:reference",
-			"name": "bored-face.pose:smartphone_page_cape"
-		},
-		{
 			"function": "minecraft:set_custom_data",
 			"tag": {
 				"bored-face.pose": { "smartphone": {} }

@@ -1,7 +1,6 @@
-$execute unless data storage bored-face.pose:smartphone $(storage)[$(i)] run data modify storage bored-face.pose:smartphone $(storage) append value []
-$data modify storage bored-face.pose:smartphone $(storage)[$(i)] append value "{ \
+$data modify storage bored-face.pose:smartphone $(storage)[$(page_num)] append value "{ \
 	\"storage\": \"bored-face.pose:data\", \
-	\"nbt\": \"$(storage)[$(j)].name\", \
+	\"nbt\": \"$(storage)[$(total)].name\", \
 	\"interpret\": true, \
 	\"clickEvent\": { \
 		\"action\": \"run_command\", \

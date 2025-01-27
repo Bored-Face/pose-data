@@ -1,9 +1,10 @@
+data remove storage bored-face.pose:smartphone pages
 data remove storage bored-face.pose:smartphone players
 data remove storage bored-face.pose:smartphone capes
 data remove storage bored-face.pose:smartphone skins
 
 # Entries per page
-scoreboard players set $max_inner bored-face.pose.loop 13
+scoreboard players set $max_inner bored-face.pose.loop 11
 
 # Player Poses
 data modify storage bored-face.pose:smartphone tmp.function set value "player"

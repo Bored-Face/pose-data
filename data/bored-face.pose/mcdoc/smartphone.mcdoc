@@ -6,6 +6,9 @@ dispatch minecraft:storage[bored-face.pose:smartphone] to struct {
 	/// List of available skins
 	skins: [[#[text_component] string]],
 
+	/// list of pages
+	pages?: [#[text_component] string],
+
 	/// Temporary data
 	tmp: Tmp,
 }
@@ -16,10 +19,10 @@ struct Tmp {
 	function?: Function,
 	/// The storage path
 	storage?: Storage,
-	/// The current index
-	i?: int,
-	/// The current inner index
-	j?: int,
+	/// The current total index
+	total?: int,
+	/// The current page index
+	page_num?: int,
 	/// The current id
 	id?: string,
 }
