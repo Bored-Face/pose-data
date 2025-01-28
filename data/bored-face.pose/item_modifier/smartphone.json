@@ -9,6 +9,7 @@
 					"author": "Bored-Face",
 					"generation": 0
 				},
+				"minecraft:item_model": "bored-face.pose:smartphone",
 				"minecraft:rarity": "epic",
 				"minecraft:enchantment_glint_override": false
 			}
