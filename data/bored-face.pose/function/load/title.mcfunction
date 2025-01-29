@@ -13,9 +13,16 @@ data modify storage bored-face.pose:data title set value [ \
 		}", \
 	}, \
 	{ \
-		id: "", \
+		id: "title", \
 		name: "{ \
-			\"text\": \"\" \
+			\"text\": \"\\u0005\", \
+			\"font\": \"bored-face.pose:space_neg\", \
+			\"extra\": [ \
+				{ \
+					\"text\": \"\\u0064\\u0013\", \
+					\"font\": \"bored-face.pose:space_pos\" \
+				} \
+			] \
 		}", \
 	}, \
 ]
