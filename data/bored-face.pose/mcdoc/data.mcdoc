@@ -15,5 +15,5 @@ struct Data {
 	name: #[text_component] string,
 	/// The identifier.
 	/// Used for the resource location of the item definition and to the call the the function.
-	id: string
+	id?: string,
 }
