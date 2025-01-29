@@ -32,6 +32,7 @@ struct NavBar {
 }
 struct NavBarIcon {
 	icon : #[text_component] string,
+	base: #[text_component] string,
 	active: #[text_component] string,
 	inactive: #[text_component] string,
 }

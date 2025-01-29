@@ -9,7 +9,7 @@ $data modify storage bored-face.pose:smartphone pages append value "{ \
 			\"shadow_color\": 0, \
 			\"color\": \"$(background_color)\", \
 			\"extra\": [ \
-				{ \"text\": \"\\u0064\\u002f\", \"font\": \"bored-face.pose:space_neg\" }, \
+				{ \"text\": \"\\u0064\\u0035\", \"font\": \"bored-face.pose:space_neg\" }, \
 				{ \"text\": \"\\u0001\" }, \
 				{ \"text\": \"\\u0001\", \"font\": \"bored-face.pose:space_neg\" } \
 			] \
@@ -25,7 +25,7 @@ $data modify storage bored-face.pose:smartphone pages append value "{ \
 			\"interpret\": true, \
 			\"separator\": \"\\n\" \
 		}, \
-		{ \"text\": \"\\n         \" }, \
+		{ \"text\": \"\\n        \" }, \
 		{ \
 			\"storage\": \"bored-face.pose:smartphone\", \
 			\"nbt\": \"nav_bar.player.$(nav_bar_player)\", \
@@ -42,6 +42,33 @@ $data modify storage bored-face.pose:smartphone pages append value "{ \
 			\"storage\": \"bored-face.pose:smartphone\", \
 			\"nbt\": \"nav_bar.skin.$(nav_bar_skin)\", \
 			\"interpret\": true \
+		}, \
+		{ \"text\": \"\\n        \" }, \
+		{ \
+			\"storage\": \"bored-face.pose:smartphone\", \
+			\"nbt\": \"nav_bar.player.base\", \
+			\"interpret\": true, \
+			\"extra\": [ \
+				{\"text\": \"\\u000b\", \"font\": \"bored-face.pose:space_pos\"} \
+			] \
+		}, \
+		{ \"text\": \" \" }, \
+		{ \
+			\"storage\": \"bored-face.pose:smartphone\", \
+			\"nbt\": \"nav_bar.cape.base\", \
+			\"interpret\": true, \
+			\"extra\": [ \
+				{\"text\": \"\\u0009\\u0001\", \"font\": \"bored-face.pose:space_pos\"} \
+			] \
+		}, \
+		{ \"text\": \" \" }, \
+		{ \
+			\"storage\": \"bored-face.pose:smartphone\", \
+			\"nbt\": \"nav_bar.skin.base\", \
+			\"interpret\": true, \
+			\"extra\": [ \
+				{\"text\": \"\\u000e\", \"font\": \"bored-face.pose:space_pos\"} \
+			] \
 		} \
 	] \
 }"

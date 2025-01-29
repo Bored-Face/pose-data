@@ -6,7 +6,7 @@ data remove storage bored-face.pose:smartphone skins
 scoreboard players reset $page_count bored-face.pose.loop
 
 # Entries per page
-scoreboard players set $line_num_max bored-face.pose.loop 11
+scoreboard players set $line_num_max bored-face.pose.loop 10
 
 data modify storage bored-face.pose:smartphone tmp set value { \
 	function: "title",\
