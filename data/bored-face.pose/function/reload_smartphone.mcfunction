@@ -15,6 +15,7 @@ data modify storage bored-face.pose:smartphone tmp set value { \
 	nav_bar_player: "active", \
 	nav_bar_cape: "active", \
 	nav_bar_skin: "active", \
+	background_color: "white", \
 }
 #function bored-face.pose:reload_smartphone/add_page with storage bored-face.pose:smartphone tmp
 execute store result score $loop_max bored-face.pose.loop run data get storage bored-face.pose:data title
@@ -31,6 +32,7 @@ data modify storage bored-face.pose:smartphone tmp set value { \
 	nav_bar_player: "active", \
 	nav_bar_cape: "inactive", \
 	nav_bar_skin: "inactive", \
+	background_color: "#ffdddd", \
 }
 execute store result score $loop_max bored-face.pose.loop run data get storage bored-face.pose:data players
 scoreboard players remove $loop_max bored-face.pose.loop 1
@@ -46,6 +48,7 @@ data modify storage bored-face.pose:smartphone tmp set value { \
 	nav_bar_player: "inactive", \
 	nav_bar_cape: "active", \
 	nav_bar_skin: "inactive", \
+	background_color: "#ddffdd", \
 }
 execute store result score $loop_max bored-face.pose.loop run data get storage bored-face.pose:data capes
 scoreboard players remove $loop_max bored-face.pose.loop 1
@@ -61,6 +64,7 @@ data modify storage bored-face.pose:smartphone tmp set value { \
 	nav_bar_player: "inactive", \
 	nav_bar_cape: "inactive", \
 	nav_bar_skin: "active", \
+	background_color: "#ddddff", \
 }
 execute store result score $loop_max bored-face.pose.loop run data get storage bored-face.pose:data skins
 scoreboard players remove $loop_max bored-face.pose.loop 1

@@ -7,7 +7,7 @@ $data modify storage bored-face.pose:smartphone pages append value "{ \
 			\"text\": \"\\u0002\", \
 			\"font\": \"bored-face.pose:icon\", \
 			\"shadow_color\": 0, \
-			\"color\": \"white\", \
+			\"color\": \"$(background_color)\", \
 			\"extra\": [ \
 				{ \"text\": \"\\u0064\\u002f\", \"font\": \"bored-face.pose:space_neg\" }, \
 				{ \"text\": \"\\u0001\" }, \
