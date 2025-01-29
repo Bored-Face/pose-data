@@ -1,4 +1,7 @@
 dispatch minecraft:storage[bored-face.pose:smartphone] to struct {
+	/// The title
+	title: [[#[text_component] string]],
+
 	/// List of available players poses
 	players: [[#[text_component] string]],
 	/// List of available capes
@@ -9,26 +12,50 @@ dispatch minecraft:storage[bored-face.pose:smartphone] to struct {
 	/// list of pages
 	pages?: [#[text_component] string],
 
+	/// navigation footer
+	nav_bar?: NavBar,
+
 	/// Temporary data
 	tmp: Tmp,
+}
+
+/// Navigation footer
+struct NavBar {
+	/// The player navigation button
+	player: NavBarIcon,
+	/// The cape navigation button
+	cape: NavBarIcon,
+	/// The skin navigation button
+	skin: NavBarIcon,
+}
+struct NavBarIcon {
+	icon : #[text_component] string,
+	active: #[text_component] string,
+	inactive: #[text_component] string,
 }
 
 /// Temporary data
 struct Tmp {
 	/// The function location
-	function?: Function,
+	function: Function,
 	/// The storage path
-	storage?: Storage,
+	storage: Storage,
 	/// The current total index
 	total?: int,
 	/// The current page index
 	page_num?: int,
 	/// The current id
 	id?: string,
+
+	nav_bar_player: NavBarIconMode,
+	nav_bar_cape: NavBarIconMode,
+	nav_bar_skin: NavBarIconMode,
 }
 
 /// Available functions
 enum(string) Function {
+	/// The title page
+	Title = "title",
 	/// The player poses
 	Player = "player",
 	/// The capes
@@ -39,10 +66,20 @@ enum(string) Function {
 
 /// Available storages
 enum(string) Storage {
+	/// The title page
+	Title = "title",
 	/// The player poses
 	Player = "players",
 	/// The capes
 	Cape = "capes",
 	/// The skins
 	Skin = "skins",
+}
+
+/// Available modes for the navigation bar icons
+enum(string) NavBarIconMode {
+	/// The icon is active
+	Active = "active",
+	/// The icon is inactive
+	Inactive = "inactive",
 }

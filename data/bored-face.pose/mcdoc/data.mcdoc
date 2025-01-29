@@ -1,4 +1,7 @@
 dispatch minecraft:storage[bored-face.pose:data] to struct {
+	/// The title
+	title: [Data],
+
 	/// List of available players poses
 	players: [Data],
 	/// List of available capes
