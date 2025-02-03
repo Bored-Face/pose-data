@@ -28,7 +28,7 @@ data modify storage bored-face.pose:data title set value [ \
 	{ name: "\"\""}, \
 	{ \
 		name: "{ \
-			\"text\": \"       BETA v0.2\", \
+			\"text\": \"          v1.0\", \
 			\"color\": \"#696969\" \
 		}" \
 	}, \
