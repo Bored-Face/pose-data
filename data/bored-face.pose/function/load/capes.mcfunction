@@ -1,5 +1,21 @@
 data modify storage bored-face.pose:data capes set value [ \
 	{ \
+		id: "none", \
+		name: "{ \
+			\"translate\": \"resource.bored-face.pose.cape.none.name\", \
+			\"color\": \"#000000\", \
+			\"hoverEvent\": {\"action\": \"show_text\", \"contents\": {\"translate\": \"resource.bored-face.pose.cape.none.description\"}} \
+		}", \
+	}, \
+	{ \
+		id: "bored", \
+		name: "{ \
+			\"translate\": \"resource.bored-face.pose.cape.bored.name\", \
+			\"color\": \"#000000\", \
+			\"hoverEvent\": {\"action\": \"show_text\", \"contents\": {\"translate\": \"resource.bored-face.pose.cape.bored.description\"}} \
+		}", \
+	}, \
+	{ \
 		id: "15th_anniversary", \
 		name: "{ \
 			\"translate\": \"resource.bored-face.pose.cape.15th_anniversary.name\", \
@@ -157,14 +173,6 @@ data modify storage bored-face.pose:data capes set value [ \
 			\"translate\": \"resource.bored-face.pose.cape.mojira_moderator.name\", \
 			\"color\": \"#000000\", \
 			\"hoverEvent\": {\"action\": \"show_text\", \"contents\": {\"translate\": \"resource.bored-face.pose.cape.mojira_moderator.description\"}} \
-		}", \
-	}, \
-	{ \
-		id: "none", \
-		name: "{ \
-			\"translate\": \"resource.bored-face.pose.cape.none.name\", \
-			\"color\": \"#000000\", \
-			\"hoverEvent\": {\"action\": \"show_text\", \"contents\": {\"translate\": \"resource.bored-face.pose.cape.none.description\"}} \
 		}", \
 	}, \
 	{ \
