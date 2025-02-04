@@ -1,0 +1,26 @@
+name: Build Pack
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Separate pack files
+        run: >-
+          mkdir pose_data && mv
+          README.md
+          LICENSE
+          data/
+          pack.mcmeta
+          pose_data
+
+      - name: Save Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pose_data
+          path: ${{ github.workspace }}/pose_data
