@@ -9,7 +9,7 @@ tellraw @s { \
 			"text": "\n\n", \
 			"extra": [ \
 				{ "translate": "selectWorld.version"}, \
-				{ "text": " 1.0.0\n"} \
+				{ "text": " 1.2.0\n"} \
 			] \
 		}, \
 		{ \
