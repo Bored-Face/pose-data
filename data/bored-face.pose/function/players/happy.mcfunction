@@ -6,7 +6,6 @@ summon minecraft:item_display ~ ~1.1185 ~ { \
 					"minecraft:custom_data": {players: {}}, \
 					"minecraft:custom_model_data": {strings: ["rightarm"]}, \
 					"minecraft:item_model": "bored-face.pose:players/default_wide", \
-					"minecraft:item_name": '"Right Arm von lardtom"' \
 				}, \
 				count: 1, \
 				id: "minecraft:barrier", \
@@ -23,7 +22,6 @@ summon minecraft:item_display ~ ~1.1185 ~ { \
 				components: { \
 					"minecraft:custom_model_data": {strings: ["bored"]}, \
 					"minecraft:item_model": "bored-face.pose:cape", \
-					"minecraft:item_name": '"mapmaker Cape"' \
 				}, \
 				count: 1, \
 				id: "minecraft:barrier", \
@@ -41,7 +39,6 @@ summon minecraft:item_display ~ ~1.1185 ~ { \
 					"minecraft:custom_data": {players: {}}, \
 					"minecraft:custom_model_data": {strings: ["leftarm"]}, \
 					"minecraft:item_model": "bored-face.pose:players/default_wide", \
-					"minecraft:item_name": '"Left Arm von lardtom"' \
 				}, \
 				count: 64, \
 				id: "minecraft:barrier", \
@@ -59,7 +56,6 @@ summon minecraft:item_display ~ ~1.1185 ~ { \
 					"minecraft:custom_data": {players: {}}, \
 					"minecraft:custom_model_data": {strings: ["leftleg"]}, \
 					"minecraft:item_model": "bored-face.pose:players/default_wide", \
-					"minecraft:item_name": '"Left Leg von lardtom"' \
 				}, \
 				count: 1, \
 				id: "minecraft:barrier", \
@@ -77,7 +73,6 @@ summon minecraft:item_display ~ ~1.1185 ~ { \
 					"minecraft:custom_data": {players: {}}, \
 					"minecraft:custom_model_data": {strings: ["head"]}, \
 					"minecraft:item_model": "bored-face.pose:players/default_wide", \
-					"minecraft:item_name": '"Head von lardtom"' \
 				}, \
 				count: 1, \
 				id: "minecraft:barrier", \
@@ -95,7 +90,6 @@ summon minecraft:item_display ~ ~1.1185 ~ { \
 					"minecraft:custom_data": {players: {}}, \
 					"minecraft:custom_model_data": {strings: ["rightleg"]}, \
 					"minecraft:item_model": "bored-face.pose:players/default_wide", \
-					"minecraft:item_name": '"Right Leg von lardtom"' \
 				}, \
 				count: 1, \
 				id: "minecraft:barrier", \
@@ -113,7 +107,6 @@ summon minecraft:item_display ~ ~1.1185 ~ { \
 			"minecraft:custom_data": {players: {}}, \
 			"minecraft:custom_model_data": {strings: ["body"]}, \
 			"minecraft:item_model": "bored-face.pose:players/default_wide", \
-			"minecraft:item_name": '"Body von lardtom"' \
 		}, \
 		count: 1, id: "minecraft:barrier" \
 	}, \
