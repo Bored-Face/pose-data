@@ -3,8 +3,8 @@ summon minecraft:item_display ~ ~1.0976 ~-0.65 { \
 		{ \
 			id: "minecraft:item_display", item: { \
 				components: { \
-					"minecraft:custom_model_data": {strings: ["none"]}, \
-					"minecraft:item_model": "bored-face.pose:cape" \
+					"minecraft:custom_data": {cape: {}}, \
+					"minecraft:item_model": "bored-face.pose:cape/none", \
 				}, \
 				count: 1, \
 				id: "minecraft:barrier", \
@@ -141,8 +141,8 @@ summon minecraft:item_display ~0.0757 ~1.0886 ~0.6219 { \
 		{ \
 			id: "minecraft:item_display", item: { \
 				components: { \
-					"minecraft:custom_model_data": {strings: ["none"]}, \
-					"minecraft:item_model": "bored-face.pose:cape" \
+					"minecraft:custom_data": {cape: {}}, \
+					"minecraft:item_model": "bored-face.pose:cape/none", \
 				}, \
 				count: 1, \
 				id: "minecraft:barrier", \

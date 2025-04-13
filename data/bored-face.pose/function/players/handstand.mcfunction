@@ -3,8 +3,8 @@ summon minecraft:item_display ~ ~0.9187 ~ { \
 		{ \
 			id: "minecraft:item_display", item: { \
 				components: { \
-					"minecraft:custom_model_data": {strings: ["bored"]}, \
-					"minecraft:item_model": "bored-face.pose:cape", \
+					"minecraft:custom_data": {cape: {}}, \
+					"minecraft:item_model": "bored-face.pose:cape/bored", \
 				}, \
 				count: 1, \
 				id: "minecraft:barrier", \
