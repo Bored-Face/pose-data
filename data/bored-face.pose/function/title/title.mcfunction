@@ -19,7 +19,7 @@ tellraw @s { \
 					translate: "message.bored-face.pose.resourcepack", \
 					color:"#aaffaa", \
 					underlined: true, \
-					click_event: { action: "open_url", url: "https://modrinth.com/resourcepack/pose" }, \
+					click_event: { action: "open_url", url: "https://modrinth.com/resourcepack/pose_resources" }, \
 					hover_event: { action: "show_text", value: {translate: "chat.link.open"} } \
 				}, \
 				{ \
