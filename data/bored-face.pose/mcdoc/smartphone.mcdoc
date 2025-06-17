@@ -1,18 +1,19 @@
-use ::java::server::util::text::TextColor
+use ::java::util::text::TextColor
+use ::java::util::text::TextObject
 
 dispatch minecraft:storage[bored-face.pose:smartphone] to struct {
 	/// The title
-	title: [[#[text_component] string]],
+	title: [[TextObject]],
 
 	/// List of available players poses
-	players: [[#[text_component] string]],
+	players: [[TextObject]],
 	/// List of available capes
-	capes: [[#[text_component] string]],
+	capes: [[TextObject]],
 	/// List of available skins
-	skins: [[#[text_component] string]],
+	skins: [[TextObject]],
 
 	/// list of pages
-	pages?: [#[text_component] string],
+	pages?: [TextObject],
 
 	/// navigation footer
 	nav_bar?: NavBar,
@@ -31,10 +32,10 @@ struct NavBar {
 	skin: NavBarIcon,
 }
 struct NavBarIcon {
-	icon : #[text_component] string,
-	base: #[text_component] string,
-	active: #[text_component] string,
-	inactive: #[text_component] string,
+	icon : TextObject,
+	base: TextObject,
+	active: TextObject,
+	inactive: TextObject,
 }
 
 /// Temporary data

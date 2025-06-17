@@ -1,3 +1,5 @@
+use ::java::util::text::TextObject
+
 dispatch minecraft:storage[bored-face.pose:data] to struct {
 	/// The title
 	title: [Data],
@@ -12,7 +14,7 @@ dispatch minecraft:storage[bored-face.pose:data] to struct {
 
 struct Data {
 	/// The display name
-	name: #[text_component] string,
+	name: TextObject,
 	/// The identifier.
 	/// Used for the resource location of the item definition and to the call the the function.
 	id?: string,
