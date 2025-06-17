@@ -9,3 +9,6 @@ execute unless data storage bored-face.pose:data skins run function bored-face.p
 function bored-face.pose:load/footer
 
 function bored-face.pose:reload_smartphone
+
+# Update all loaded capes from versions prior to 2.0
+function bored-face.pose:tool/update_capes
