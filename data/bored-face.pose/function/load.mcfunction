@@ -1,5 +1,6 @@
 scoreboard objectives add bored-face.pose.smartphone trigger
 scoreboard objectives add bored-face.pose.loop dummy
+scoreboard objectives add bored-face.pose.registry trigger
 
 function bored-face.pose:engine/reload_smartphone
 

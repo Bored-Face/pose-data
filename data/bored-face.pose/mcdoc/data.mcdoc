@@ -6,7 +6,7 @@ dispatch minecraft:storage[bored-face.pose:data] to struct {
 	format: int,
 
 	/// All the P.O.S.E. registries
-	registries: [RegistryBase],
+	registries: [RegistryIndex],
 	/// The currently loaded registries.
 	/// This is used to determine which registries are removed or added after a reload.
 	loaded_registries: [LoadedRegistry],
@@ -27,6 +27,14 @@ struct LoadedRegistry {
 
 	/// All the entries in the registry
 	entries: [RegistryEntry],
+}
+
+struct RegistryIndex {
+	...RegistryBase,
+
+	/// The index of the registry in the registries list.
+	/// Gets set automatically when the registry is loaded.
+	index?: int,
 }
 
 /// A single entry in a P.O.S.E. registry

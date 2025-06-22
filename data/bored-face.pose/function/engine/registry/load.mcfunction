@@ -1,3 +1,6 @@
+# Copy the index back to the data storage to not have to write it later when using it.
+execute store result storage bored-face.pose:data registries[0].index int 1 run scoreboard players get $loop bored-face.pose.loop
+
 function bored-face.pose:engine/registry/load_macro with storage bored-face.pose:data registries[0]
 
 # continue loop
