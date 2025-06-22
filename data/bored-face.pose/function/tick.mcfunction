@@ -1,5 +1,5 @@
 scoreboard players enable @a bored-face.pose.smartphone
-execute as @a if score @s bored-face.pose.smartphone matches 1.. at @s run function bored-face.pose:smartphone
+execute as @a if score @s bored-face.pose.smartphone matches 1.. at @s run function bored-face.pose:smartphone with storage bored-face.pose:smartphone
 
 execute as @a if score @s bored-face.pose.registry matches 0.. at @s store result storage bored-face.pose:smartphone tmp.index int 1 run scoreboard players get @s bored-face.pose.registry
 execute as @a if score @s bored-face.pose.registry matches 0.. at @s run function bored-face.pose:util/get_registry_id_from_index with storage bored-face.pose:smartphone tmp

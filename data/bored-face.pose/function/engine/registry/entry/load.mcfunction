@@ -1,5 +1,8 @@
-# Copy the index back to the data storage to not have to write it later when using it.
+# Copy the index and registry values to the entry to not have to write it later when using it.
+# We cant write the registry index here because it may or may not change when the registry is reloaded.
 execute store result storage bored-face.pose:data loaded_registries[0].entries[0].index int 1 run scoreboard players get $loop_inner bored-face.pose.loop
+data modify storage bored-face.pose:data loaded_registries[0].entries[0].registry_id set from storage bored-face.pose:data loaded_registries[0].id
+data modify storage bored-face.pose:data loaded_registries[0].entries[0].registry_name set from storage bored-face.pose:data loaded_registries[0].name
 
 # Build the button in tmp.button
 data modify storage bored-face.pose:smartphone tmp.button.label set from storage bored-face.pose:data loaded_registries[0].entries[0].name

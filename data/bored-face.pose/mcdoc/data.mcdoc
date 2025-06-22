@@ -1,4 +1,5 @@
 use ::java::util::text::TextObject
+use ::java::world::item::SingleItem
 
 dispatch minecraft:storage[bored-face.pose:data] to struct {
 	/// The format version of the data structure
@@ -20,6 +21,11 @@ struct RegistryBase {
 	name: TextObject,
 	/// The description of the registry
 	description: TextObject,
+
+	/// The item template string fo previewing an entry of the registry.
+	/// Supports entriy macros like `$(id)` for the entry's ID.
+	/// If not set, only the name and description will be shown.
+	item?: SingleItem
 }
 
 struct LoadedRegistry {
@@ -46,6 +52,17 @@ struct RegistryEntry {
 	/// The identifier.
 	/// Used for the resource location of the item definition and to the call the the function.
 	id: #[match_regex="^[a-z0-9_]+$"] string,
+
 	/// The index of the entry in the registry.
+	/// Will be set automatically when the registry is loaded.
 	index?: int,
+	/// The registry id this entry belongs to.
+	/// Will be set automatically when the registry is loaded.
+	registry_id?: #[bored_face_pose] string,
+	/// The index of the registry in the registries list.
+	/// Will be set automatically when the registry is loaded.
+	registry_index?: int,
+	/// The name of the registry this entry belongs to.
+	/// Will be set automatically when the registry is loaded.
+	registry_name?: string,
 }

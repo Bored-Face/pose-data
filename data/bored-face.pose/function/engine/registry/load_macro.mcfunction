@@ -6,6 +6,7 @@ data modify storage bored-face.pose:data loaded_registries prepend from storage 
 $scoreboard objectives add bored-face.pose.$(id)_prompt trigger {text: "P.O.S.E. Registry: ", extra: [$(name), {text: " (prompt)"}], color: "gray", italic: true}
 $scoreboard objectives add bored-face.pose.$(id) trigger {text: "P.O.S.E. Registry: ", extra: [$(name)]}
 
+$data remove storage bored-face.pose:smartphone registries[{id:"$(id)"}]
 data modify storage bored-face.pose:smartphone registries prepend from storage bored-face.pose:data registries[0]
 
 $function #bored-face.pose:$(id)/add_entries

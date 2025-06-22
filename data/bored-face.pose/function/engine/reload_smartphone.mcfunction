@@ -1,4 +1,5 @@
 data remove storage bored-face.pose:data registries
+data remove storage bored-face.pose:smartphone actions
 
 function #bored-face.pose:load
 

@@ -11,5 +11,6 @@ $dialog show @s { \
 	columns: 1, \
 	exit_action: { \
 		label: {translate: "gui.back"}, \
-	},\
+		action: {type: "run_command", command: "trigger bored-face.pose.smartphone"}, \
+	}, \
 }

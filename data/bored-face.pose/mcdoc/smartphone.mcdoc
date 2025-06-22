@@ -5,23 +5,8 @@ use super::data::RegistryBase
 
 dispatch minecraft:storage[bored-face.pose:smartphone] to struct {
 	registries: [SmartphoneRegistry],
-
-
-	/// DEPRECATED: The title
-	title?: any,
-
-	/// DEPRECATED: List of available players poses
-	players?: any,
-	/// DEPRECATED: List of available capes
-	capes?: any,
-	/// DEPRECATED: List of available skins
-	skins: any,
-
-	/// DEPRECATED: list of pages
-	pages?: any,
-
-	/// DEPRECATED: navigation footer
-	nav_bar?: any,
+	/// The dialog buttons for each registry
+	actions: [Button],
 
 	/// Temporary data
 	tmp: Tmp,
