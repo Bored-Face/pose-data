@@ -1,94 +1,31 @@
-use ::java::util::text::TextColor
 use ::java::util::text::TextObject
+use ::java::data::dialog::Button
+
+use super::data::RegistryBase
 
 dispatch minecraft:storage[bored-face.pose:smartphone] to struct {
-	/// The title
-	title: [[TextObject]],
-
-	/// List of available players poses
-	players: [[TextObject]],
-	/// List of available capes
-	capes: [[TextObject]],
-	/// List of available skins
-	skins: [[TextObject]],
-
-	/// list of pages
-	pages?: [TextObject],
-
-	/// navigation footer
-	nav_bar?: NavBar,
+	registries: [SmartphoneRegistry],
+	/// The dialog buttons for each registry
+	actions: [Button],
 
 	/// Temporary data
 	tmp: Tmp,
 }
 
-/// Navigation footer
-struct NavBar {
-	/// The player navigation button
-	player: NavBarIcon,
-	/// The cape navigation button
-	cape: NavBarIcon,
-	/// The skin navigation button
-	skin: NavBarIcon,
-}
-struct NavBarIcon {
-	icon : TextObject,
-	base: TextObject,
-	active: TextObject,
-	inactive: TextObject,
+struct SmartphoneRegistry {
+	...RegistryBase,
+
+	/// The dialog buttons for each entry in the registry
+	actions: [Button]
 }
 
 /// Temporary data
 struct Tmp {
-	/// The function location
-	function: Function,
-	/// The storage path
-	storage: Storage,
-	/// The current total index
-	total?: int,
-	/// The current page index
-	page_num?: int,
-	/// The current id
-	id?: string,
-
-	nav_bar_player: NavBarIconMode,
-	nav_bar_cape: NavBarIconMode,
-	nav_bar_skin: NavBarIconMode,
-
-	background_color: (
-		#[color="hex_rgb"] string |
-		#[color="named"] TextColor |
-	)
-}
-
-/// Available functions
-enum(string) Function {
-	/// The title page
-	Title = "title",
-	/// The player poses
-	Player = "player",
-	/// The capes
-	Cape = "cape",
-	/// The skins
-	Skin = "skin",
-}
-
-/// Available storages
-enum(string) Storage {
-	/// The title page
-	Title = "title",
-	/// The player poses
-	Player = "players",
-	/// The capes
-	Cape = "capes",
-	/// The skins
-	Skin = "skins",
-}
-
-/// Available modes for the navigation bar icons
-enum(string) NavBarIconMode {
-	/// The icon is active
-	Active = "active",
-	/// The icon is inactive
-	Inactive = "inactive",
+	/// The scoreboard objective that gets triggered when the user clicks a button
+	id: #[bored_face_pose] string,
+	/// The current index
+	index?: int,
+	
+	/// A single button to assemble append it to the dialog
+	button?: Button,
 }

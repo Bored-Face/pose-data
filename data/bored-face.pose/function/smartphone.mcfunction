@@ -1,7 +1,36 @@
 scoreboard players reset @s bored-face.pose.smartphone
 
-clear @s *[minecraft:custom_data={bored-face.pose:{smartphone:{}}}]
-summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:written_book"}, Tags: ["bored-face.pose.smartphone"], PickupDelay:0}
-
-item modify entity @n[type=minecraft:item, tag=bored-face.pose.smartphone, distance=..0.1] contents bored-face.pose:smartphone
-data modify entity @n[type=minecraft:item, tag=bored-face.pose.smartphone, distance=..0.1] Item.components.minecraft:written_book_content.pages set from storage bored-face.pose:smartphone pages
+$dialog show @s { \
+	title: "P.O.S.E. - Player Origin Statue Engine", \
+	type: "minecraft:multi_action", \
+	body: [ \
+		{ \
+			type: "minecraft:plain_message", \
+			contents: { \
+				text: "\n",\
+				extra: [ \
+					{ \
+						text: "\u0005", \
+						font: "bored-face.pose:space_neg", \
+						color: "white", \
+						extra: [ \
+							{ text: "\u0003", font: "bored-face.pose:icon" }, \
+							{ text: "\u0001" }, \
+							{ text: "\u0004", font: "bored-face.pose:icon" } \
+						] \
+					}, \
+					{text: "\n\n"}, \
+					{ \
+						text: "Version 2.0", \
+						color: "#696969" \
+					}, \
+				],\
+			}, \
+		}, \
+	], \
+	actions: $(actions), \
+	columns: 1, \
+	exit_action: { \
+		label: {translate: "gui.back"}, \
+	}, \
+}
