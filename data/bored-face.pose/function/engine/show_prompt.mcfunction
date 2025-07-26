@@ -3,6 +3,7 @@ $data modify storage bored-face.pose:data loaded_registries[{id:"$(id)"}].entrie
 
 $data modify storage bored-face.pose:data loaded_registries[{id:"$(id)"}].entry_name set from storage bored-face.pose:data loaded_registries[{id:"$(id)"}].entries[$(index)].name
 
+$function #bored-face.pose:$(id)/item with storage bored-face.pose:data loaded_registries[{id:"$(id)"}].entries[$(index)]
 $execute if data storage bored-face.pose:data loaded_registries[{id:"$(id)"}].item run \
 	function bored-face.pose:engine/show_prompt_with_item with storage bored-face.pose:data loaded_registries[{id:"$(id)"}]
 $execute unless data storage bored-face.pose:data loaded_registries[{id:"$(id)"}].item run \

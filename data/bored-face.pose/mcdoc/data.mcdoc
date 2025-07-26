@@ -23,9 +23,8 @@ struct RegistryBase {
 	description: TextObject,
 
 	/// The item template string fo previewing an entry of the registry.
-	/// Supports entriy macros like `$(id)` for the entry's ID.
 	/// If not set, only the name and description will be shown.
-	item?: SingleItem
+	item?: SingleItem,
 }
 
 struct LoadedRegistry {
