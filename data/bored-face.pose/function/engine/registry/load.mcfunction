@@ -8,6 +8,13 @@ data modify storage bored-face.pose:smartphone tmp.button.action.type set value 
 function bored-face.pose:engine/registry/load_button with storage bored-face.pose:data registries[0]
 data modify storage bored-face.pose:smartphone actions append from storage bored-face.pose:smartphone tmp.button
 
+# Build the admin button in tmp.button
+data modify storage bored-face.pose:smartphone tmp.button.label set from storage bored-face.pose:data registries[0].name
+data modify storage bored-face.pose:smartphone tmp.button.action.type set value "run_command"
+# Build the admin button with macros
+function bored-face.pose:engine/registry/load_button_admin with storage bored-face.pose:data registries[0]
+data modify storage bored-face.pose:smartphone admin_actions append from storage bored-face.pose:smartphone tmp.button
+
 function bored-face.pose:engine/registry/load_macro with storage bored-face.pose:data registries[0]
 
 # continue loop
