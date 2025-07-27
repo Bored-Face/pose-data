@@ -18,10 +18,32 @@ scoreboard players set $loop_inner bored-face.pose.loop 0
 execute if score $loop_inner_max bored-face.pose.loop matches 0.. run function bored-face.pose:engine/registry/entry/load
 
 
-$tellraw @a { \
+tellraw @a { \
 	translate: "chat.type.announcement", \
 	with: [ \
 		{text: "P.O.S.E.", color: "white", shadow_color: -13223871}, \
-		{translate: "Registry %s loaded!", with: [$(name)], color: "green"}, \
+		{ \
+			translate: "message.bored-face.pose.registry_loaded", \
+			color: "green", \
+			with: [ \
+				{ \
+					storage: "bored-face.pose:data", \
+					nbt: "registries[0].name", \
+					interpret: true, \
+					hover_event: { \
+						action: "show_text", \
+						value: { \
+							storage: "bored-face.pose:data", \
+							nbt: "registries[0].description", \
+							interpret: true, \
+							extra: [ \
+								{color: "dark_gray", italic: true, text: "\n\nbored-face.pose:"}, \
+								{color: "dark_gray", italic: true, storage: "bored-face.pose:data", nbt: "registries[0].id"}, \
+							], \
+						}, \
+					}, \
+				}, \
+			], \
+		}, \
 	], \
 }

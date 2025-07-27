@@ -1,4 +1,4 @@
-$tellraw @s {text: "Reloading registry '$(id)'..."}
+$tellraw @s {translate: "message.bored-face.pose.registry_reloading", with: [$(id)]}
 
 # simulate the unloading of the registry
 $data remove storage bored-face.pose:data registries[{id: "$(id)"}]
