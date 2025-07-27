@@ -1,0 +1,7 @@
+{
+	"values": [
+		"bored-face.pose.cape:load_pose",
+		"bored-face.pose.player:load_pose",
+		"bored-face.pose.skin:load_pose"
+	]
+}

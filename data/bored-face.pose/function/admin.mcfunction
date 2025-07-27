@@ -1,13 +1,12 @@
-scoreboard players reset @s bored-face.pose.smartphone
 
 $dialog show @s { \
-	title: "P.O.S.E. - Player Origin Statue Engine", \
+	title: "P.O.S.E. - Admin", \
 	type: "minecraft:multi_action", \
 	body: [ \
 		{ \
 			type: "minecraft:plain_message", \
 			contents: { \
-				text: "\n",\
+				text: "\n", \
 				extra: [ \
 					{ \
 						text: "\u0005", \
@@ -19,18 +18,20 @@ $dialog show @s { \
 							{ text: "\u0004", font: "bored-face.pose:icon" } \
 						] \
 					}, \
-					{text: "\n\n"}, \
-					{ \
-						text: "Version 2.0", \
-						color: "#696969" \
-					}, \
-				],\
+				], \
+			}, \
+		}, \
+		{ \
+			type: "minecraft:plain_message", \
+			contents: { \
+				text: "Version 2.0", \
+				color: "#696969", \
 			}, \
 		}, \
 	], \
-	actions: $(actions), \
+	actions: $(admin_actions), \
 	columns: 1, \
 	exit_action: { \
-		label: {translate: "gui.back"}, \
+		label: {translate: "gui.cancel"}, \
 	}, \
 }

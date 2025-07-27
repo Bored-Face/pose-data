@@ -1,0 +1,42 @@
+{
+	"title": "P.O.S.E.",
+	"type": "minecraft:multi_action",
+	"body": {
+		"type": "minecraft:plain_message",
+		"contents": {
+			"text": "Hello world!"
+		}
+	},
+	"actions": [
+		{
+			"label": "Smartphone",
+			"action": {
+				"type": "run_command",
+				"command": "trigger bored-face.pose.smartphone"
+			},
+			"tooltip": {
+				"text": "Give yourself a smartphone"
+			}
+		},
+		{
+			"label": "GitHub",
+			"action": {
+				"type": "open_url",
+				"url": "https://github.com/Bored-Face"
+			},
+			"tooltip": {
+				"text": "Open our GitHub page in your browser"
+			}
+		},
+		{
+			"label": "Modrinth",
+			"action": {
+				"type": "open_url",
+				"url": "https://modrinth.com/organization/boredface"
+			},
+			"tooltip": {
+				"text": "Open our Modrinth page in your browser"
+			}
+		}
+	]
+}
